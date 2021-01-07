@@ -669,6 +669,12 @@ public class ExtraIconProvider extends BaseIconProvider implements DumbAware {
                 .end(".vsd", ".vsdx", ".vss", ".vssx", ".vst", ".vstx"),
             ofFile("ext_msoffice_word", "/extra-icons/officedocs/msword.png", "MSOffice Word: *.doc, *.docx")
                 .end(".doc", ".docx"),
+            ofFile("react", "/extra-icons/react.svg", "React: *.jsx, *.tsx")
+                .end(".jsx", ".tsx")
+            ofFile("babel", "/extra-icons/babel.svg", "Babel Configuration: start by 'babel', end by '.json'")
+                .start("babel").end(".json")
+            ofFile("babel", "/extra-icons/babel.svg", "Babel Configuration: start by '.babelrc'")
+                .start(".babelrc")
 
             //
             // generic
